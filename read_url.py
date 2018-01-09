@@ -5,7 +5,7 @@ from PyPDF2 import PdfFileReader
 #response = urllib.request.urlopen('https:...')
 
 
-response = open("2017qccq2179.html",'r',encoding = 'utf-8')
+response = open(".html",'r',encoding = 'utf-8')
 #response = PdfFileReader(open('.pdf','r'))
 
 
