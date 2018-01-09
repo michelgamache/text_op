@@ -1,16 +1,15 @@
 import csv
-
-import os
+#import os
 import glob
 
-files = glob.glob('*.txt')
-for file in files:
+file_list = glob.glob('*.txt')
+for file in file_list:
     #print(file)
-    csj_text = open(file,"r")
+    csj_text = open(file, "r")
     text = csj_text.read()
-    with open('test.csv','a',newline='') as csvfile:
+    with open('test.csv', 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([file,text])
+        writer.writerow([file, text])
     csj_text.close()
 
 print("fini!")
@@ -28,4 +27,3 @@ with open('test.csv','a',newline='', encoding = 'utf-8') as csvfile:
 print(csj_txt.read())
 
 csj_txt.close() '''
-
